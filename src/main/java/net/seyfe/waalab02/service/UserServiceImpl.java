@@ -47,9 +47,6 @@ public class UserServiceImpl implements UserService{
     @Override
     public void save(User user) {
         userRepo.save(user);
-        user.getPosts().stream()
-                .map(p -> {p.setUser(user);return p;})
-                .forEach(p -> postRepo.save(p));
     }
 
     @Override

@@ -15,8 +15,8 @@ public class Post {
     private String title;
     private String content;
     private String author;
-
-    @ManyToOne
-    private User user;
+//
+//    @ManyToOne
+//    private User user;
 
 }
